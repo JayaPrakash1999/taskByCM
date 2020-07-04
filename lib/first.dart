@@ -125,11 +125,14 @@ class _FirstScreenState extends State<FirstScreen> {
 
 
                   if(_formKey.currentState.validate()){
+                    // ignore: unrelated_type_equality_checks
+                    namecontroller==name && passcontroller==pass ?
                   
                  Navigator.push(context, MaterialPageRoute(builder: (context)=>
-                  HomeScreen()));
-                  }
-                  else{
+                  HomeScreen())):
+                  // ;
+                  // }
+                  // else{
                     SnackBar(content: 
                     Text("Inavlid Credentials"));
                   }
