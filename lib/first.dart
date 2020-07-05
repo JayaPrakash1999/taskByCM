@@ -121,6 +121,7 @@ class _FirstScreenState extends State<FirstScreen> {
                             if (namecontroller == name &&
                                 // ignore: unrelated_type_equality_checks
                                 passcontroller == pass) {
+                              print("verified");
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
